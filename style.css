@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+code {
+    background-color: bisque;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 10px;
+}

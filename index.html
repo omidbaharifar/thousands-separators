@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thousands separators</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>with this code:</p>
+    <br />
+    <code>
+      let prices = document.querySelectorAll(".price");
+      <br />
+      <br />
+      prices.forEach((price) => {
+      <br />
+      price.innerHTML = price.innerHTML.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      <br />
+      });
+    </code>
+    <br />
+    <p>you can change this:</p>
+    <br />
+    <p>85000</p>
+    <br />
+    <p>to this:</p>
+    <br />
+    <p class="price">85000</p>
+
+    <script src="main.js"></script>
+  </body>
+</html>
